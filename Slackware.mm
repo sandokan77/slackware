@@ -286,5 +286,36 @@
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1521540815275" ID="ID_117839078" MODIFIED="1521540817877" TEXT="https://github.com/mateslackbuilds/msb"/>
 </node>
+<node CREATED="1521685702751" ID="ID_1117342930" MODIFIED="1521685702751" POSITION="left" TEXT="">
+<node CREATED="1521685703678" ID="ID_448485717" MODIFIED="1521685731270" TEXT="HOWTO: Compile and Install Kernel">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521685754183" ID="ID_177898370" MODIFIED="1521685756927" TEXT="https://docs.slackware.com/slackbook:linux_kernel"/>
+<node CREATED="1521685795489" ID="ID_579737633" MODIFIED="1521685797431" TEXT="https://www.linuxquestions.org/questions/slackware-14/how-long-does-it-take-to-compile-the-kernel-on-a-slow-machine-289143/">
+<node CREATED="1521685803939" ID="ID_111968034" MODIFIED="1521685820292" TEXT="make targets can be chained"/>
+</node>
+<node CREATED="1521692134550" ID="ID_1136406427" MODIFIED="1521692380326" TEXT="Steps">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521692381278" ID="ID_136121231" MODIFIED="1521692385470" TEXT="make menuconfig">
+<node CREATED="1521692390935" ID="ID_776977772" MODIFIED="1521692425225" TEXT="this will start a menu-driven kernel option configuration same to gentoo linux"/>
+<node CREATED="1521692597643" ID="ID_1158425399" MODIFIED="1521692599445" TEXT="CPU_FLAGS_X86 are for packages, not for kernel build. Some packages expect it, but not all of them ... yet."/>
+</node>
+<node CREATED="1521692137739" ID="ID_994326410" MODIFIED="1521692146963" TEXT="make bzImage">
+<node CREATED="1521692208708" ID="ID_1352866631" MODIFIED="1521692215594" TEXT="output">
+<node CREATED="1521692166127" ID="ID_1907861900" MODIFIED="1521692262239" TEXT="arch/x86/boot/bzImage">
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1907861900" ENDARROW="Default" ENDINCLINATION="31;0;" ID="Arrow_ID_70623307" SOURCE="ID_1560423388" STARTARROW="None" STARTINCLINATION="31;0;"/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1521692238233" ID="ID_1560423388" MODIFIED="1521692262240" TEXT="arch/x86_64/boot/bzImage">
+<arrowlink DESTINATION="ID_1907861900" ENDARROW="Default" ENDINCLINATION="31;0;" ID="Arrow_ID_70623307" STARTARROW="None" STARTINCLINATION="31;0;"/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1521692511590" ID="ID_174610746" MODIFIED="1521692518204" TEXT="compilation time : 3 hours"/>
+</node>
+<node CREATED="1521692456071" ID="ID_531166309" MODIFIED="1521692459231" TEXT="make modules"/>
+<node CREATED="1521692492554" ID="ID_74572071" MODIFIED="1521692494952" TEXT="make modules_install"/>
+</node>
+</node>
+</node>
 </node>
 </map>
