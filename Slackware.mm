@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1521330639470" ID="ID_502657441" MODIFIED="1521528461965" TEXT="Slackware">
+<node CREATED="1521330639470" ID="ID_502657441" MODIFIED="1521531897874" TEXT="Slackware">
 <font BOLD="true" NAME="SansSerif" SIZE="37"/>
 <node CREATED="1521330756601" ID="ID_908499676" MODIFIED="1521504415055" POSITION="right" TEXT="package management">
 <font BOLD="true" NAME="SansSerif" SIZE="14"/>
@@ -245,8 +245,7 @@
  <font color="#000000"> </font><font color="#000000" face="Sans Serif" size="3">~#lilo -v -t -b /dev/your_device             #sda, hda this will only test  </font> (chris: /dev/sda2)
  <font color="#000000"> </font><font color="#000000" face="Sans Serif" size="3">~#lilo -v -b /dev/your_device                 #this will write to your boot device </font>(chris: /dev/sda2)</pre>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1521514927045" ID="ID_1614379783" MODIFIED="1521514929037" TEXT="https://www.linuxquestions.org/questions/slackware-14/kernel-configuration-problem-909640/"/>
 <node CREATED="1521515348065" FOLDED="true" ID="ID_1456514834" MODIFIED="1521528362026" TEXT="notice, first time when starting X will be resulted in an error message">
@@ -279,6 +278,13 @@
 <node CREATED="1521528493857" ID="ID_1507703825" MODIFIED="1521528723450" TEXT="Switch into root user to do this. Open and edit file /etc/profile.d/lang.sh remove # (uncomment) line of export LANG=en_US.UTF-8 ">
 <icon BUILTIN="yes"/>
 </node>
+</node>
+<node CREATED="1521531905804" ID="ID_1528886907" MODIFIED="1521531935195" POSITION="left" TEXT="HOWTO: Change Desktop &amp; Window (GUI agent)">
+<node CREATED="1521531937986" ID="ID_80272220" MODIFIED="1521531943276" TEXT="xwmconfig"/>
+</node>
+<node CREATED="1521540785112" ID="ID_753315009" MODIFIED="1521540813019" POSITION="right" TEXT="HOWTO: Compile and Install MATE desktop">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521540815275" ID="ID_117839078" MODIFIED="1521540817877" TEXT="https://github.com/mateslackbuilds/msb"/>
 </node>
 </node>
 </map>
