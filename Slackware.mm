@@ -216,7 +216,7 @@
 <node CREATED="1521511244797" ID="ID_322857910" MODIFIED="1521511254206" TEXT="copy jre-8u161-linux-x64.tar.gz to /usr/java"/>
 <node CREATED="1521510873045" ID="ID_1834948673" MODIFIED="1521510876237" TEXT="tar xvzf jre-8u161-linux-x64.tar.gz"/>
 </node>
-<node CREATED="1521514910698" ID="ID_381515545" MODIFIED="1521528615143" POSITION="right" TEXT="HOWTO: Fix Slackware when it is no longer booting">
+<node CREATED="1521514910698" ID="ID_381515545" MODIFIED="1521786333719" POSITION="right" TEXT="HOWTO: Fix Slackware when it is no longer booting">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -245,7 +245,8 @@
  <font color="#000000"> </font><font color="#000000" face="Sans Serif" size="3">~#lilo -v -t -b /dev/your_device             #sda, hda this will only test  </font> (chris: /dev/sda2)
  <font color="#000000"> </font><font color="#000000" face="Sans Serif" size="3">~#lilo -v -b /dev/your_device                 #this will write to your boot device </font>(chris: /dev/sda2)</pre>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1521514927045" ID="ID_1614379783" MODIFIED="1521514929037" TEXT="https://www.linuxquestions.org/questions/slackware-14/kernel-configuration-problem-909640/"/>
 <node CREATED="1521515348065" FOLDED="true" ID="ID_1456514834" MODIFIED="1521528362026" TEXT="notice, first time when starting X will be resulted in an error message">
@@ -316,6 +317,32 @@
 <node CREATED="1521692492554" ID="ID_74572071" MODIFIED="1521692494952" TEXT="make modules_install"/>
 </node>
 </node>
+</node>
+<node CREATED="1521780280856" ID="ID_785848763" MODIFIED="1521780296790" POSITION="right" TEXT="ISSUE: can not boot from eMMC">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521780297938" ID="ID_1575223747" MODIFIED="1521780312324" TEXT="https://www.linuxquestions.org/questions/slackware-installation-40/slackware64-current-14-2-bug-with-uefi-install-onto-dell-inspiron-14-3452-laptop-emmc-32gb-drive-from-usb-stick-image-4175587811/"/>
+<node CREATED="1521780322473" ID="ID_553533809" MODIFIED="1521780339865" TEXT="https://www.linuxquestions.org/questions/slackware-installation-40/installing-slackware64-14-2-on-a-asus-e200ha-kernel-panic-4175621462/"/>
+</node>
+<node CREATED="1521785812678" ID="ID_254645421" MODIFIED="1521785828366" POSITION="left" TEXT="HOWTO:burn iso file to USB">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521786157319" ID="ID_1705083138" MODIFIED="1521786162230" TEXT="articles">
+<node CREATED="1521786142759" ID="ID_1154960655" MODIFIED="1521786144843" TEXT="https://superuser.com/questions/1075424/how-to-write-freebsd-image-to-usb-flash-drive"/>
+<node CREATED="1521786114855" ID="ID_1334039748" MODIFIED="1521786117436" TEXT="https://www.linux.com/blog/how-burn-iso-usb-drive"/>
+</node>
+<node CREATED="1521785853628" ID="ID_1461187508" MODIFIED="1521785882695" TEXT="use one of these commands to find the /dev/drive the usb is attached to">
+<node CREATED="1521785906392" ID="ID_930071952" MODIFIED="1521785909612" TEXT="fdisk -l"/>
+<node CREATED="1521785911366" ID="ID_681416192" MODIFIED="1521785916255" TEXT="lsblk"/>
+</node>
+<node CREATED="1521785840492" ID="ID_1120140437" MODIFIED="1521785850377" TEXT="umount /dev/sdb first"/>
+<node CREATED="1521785832517" ID="ID_64703050" MODIFIED="1521786027900" TEXT="dd bs=4M if=/media/sf_transfer/FreeBSD-11.1-RELEASE-amd64-dvd1.iso of=/dev/sdb">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1521785972454" ID="ID_1605196040" MODIFIED="1521786017684" TEXT="caution, the device name must be the device and not the partition on the device">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+</node>
+<node CREATED="1521786294009" ID="ID_1325748019" MODIFIED="1521786311554" POSITION="right" TEXT="HOWTO: Create Slackware Live USB with persistence">
+<node CREATED="1521786312455" ID="ID_507025576" MODIFIED="1521786314104" TEXT="https://alien.slackbook.org/blog/how-to-create-a-slackware-live-usb-stick-if-you-are-not-using-slackware/"/>
 </node>
 </node>
 </map>
